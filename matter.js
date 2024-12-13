@@ -39,8 +39,8 @@ const positions = [
 ];
 
 // render balls
-let numberOfBalls = 80;
-let ballSize = 50;
+let numberOfBalls = 75;
+let ballSize = 60;
 let delay = ballSize; // Reduced delay
 
 for (let i = 0; i < numberOfBalls; i++) {
