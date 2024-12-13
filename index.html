@@ -22,6 +22,9 @@
     <div id="matter-container">
         <div id="hidden-text">Timon Amesmann</div>
     </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
     <script src="matter.js"></script>
 </section>
 
@@ -53,18 +56,18 @@
 </div>
 
 <!-- About Me Section -->
-<section class="container py-5">
-    <!-- Text on the left side, big image on the right side -->
-    <div class="row g-4">
-        <div class="col-md-6">
-            <p class="about-me-description">
-                Ich bin Schüler der HTL-Rennweg. Leidenschaftlicher Programmierer und Fotograf.
+<section id="about" class="container py-5">
+    <div class="d-flex g-2 justify-content-end text-end">
+        <div>
+            <p class="about-me-description me-3">
+                Ich bin Schüler der HTL-Rennweg. Leidenschaftlicher <span class="about-me-highlight-text">Programmierer</span> und <span class="about-me-highlight-text">Fotograf</span>.
             </p>
+            <div class="d-flex justify-content-center">
+                <a href="#about" class="about-me-btn mt-3">Mehr über mich</a>
+            </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
-            <!-- Vertikal Image with rounded corners and shadow -->
-            <img src="Timon_Amesmann_Image.jpg" alt="Timon Amesmann" class="about-me-image img-fluid rounded mx-auto">
-        </div>
+
+        <img src="Timon_Amesmann_Image.jpg" alt="Timon Amesmann" class="about-me-image img-fluid rounded">
     </div>
 </section>
 

@@ -38,9 +38,19 @@ const positions = [
   matterContainer.clientWidth * 0.9  // Right
 ];
 
-// render balls
-let numberOfBalls = 75;
-let ballSize = 60;
+// Calculate number of balls
+let ballSize = 50;
+let containerArea = matterContainer.clientWidth * matterContainer.clientHeight;
+let ballArea = Math.PI * Math.pow(ballSize, 2);
+let numberOfBalls = Math.floor(containerArea / ballArea * 0.5); // Adjust the divisor to control density
+
+// Adjust ball size if number of balls exceeds 50
+if (numberOfBalls > 50) {
+  ballSize = Math.sqrt(containerArea / (Math.PI * 50 * 0.75));
+  ballSize = Math.max(ballSize, 50); // Ensure ball size does not go below 50
+  numberOfBalls = Math.floor(containerArea / (Math.PI * Math.pow(ballSize, 2)) * 0.75);
+}
+
 let delay = ballSize; // Reduced delay
 
 for (let i = 0; i < numberOfBalls; i++) {

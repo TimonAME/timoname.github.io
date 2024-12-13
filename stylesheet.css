@@ -36,7 +36,7 @@ canvas {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12rem;
+    font-size: 12vw;
     font-weight: 900;
     color: #f4f4f4;
     pointer-events: none;
@@ -50,6 +50,29 @@ canvas {
     color: var(--color-dark-blue);
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.scroll-indicator {
+    z-index: 3;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: var(--color-dark-blue);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
 }
 
 /* Fixed Social Links */
@@ -85,6 +108,12 @@ canvas {
 .fixed-social-links a i {
     font-size: 1.5rem;
 }
+
+.fixed-social-links a:focus {
+    outline: 2px solid var(--color-deep-orange);
+    outline-offset: 3px;
+}
+
 
 /* Compact Horizontal Navigation */
 .compact-nav {
@@ -145,17 +174,26 @@ canvas {
     z-index: 2;
 }
 
+.compact-nav-btn:focus {
+    outline: 2px solid var(--color-deep-orange);
+    outline-offset: 3px;
+}
+
+
 /* About me */
 .about-me-description {
     font-size: 4rem;
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.2;
     color: var(--color-dark-blue);
-    text-align: left;
+    text-align: right;
     margin-bottom: 2rem;
+    cursor: default;
+
 }
 .about-me-image {
     height: 400px;
+    width: auto;
     -webkit-box-shadow: 5px 5px 0px 3px rgba(242,113,39,1);
     -moz-box-shadow: 5px 5px 0px 3px rgba(242,113,39,1);
     box-shadow: 5px 5px 0px 3px rgba(242,113,39,1);
@@ -170,6 +208,46 @@ canvas {
     
     rotate: 1deg;
 }
+.about-me-highlight-text {
+    color: var(--color-orange);
+    font-weight: 900;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.about-me-highlight-text:hover {
+    color: var(--color-deep-orange);
+}
+.about-me-btn {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: white;
+    background: var(--color-deep-orange);
+    border: none;
+    padding: 12px 32px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+    -webkit-box-shadow: 5px 5px 0px 3px #2E3440;
+    -moz-box-shadow: 5px 5px 0px 3px #2E3440;
+    box-shadow: 5px 5px 0px 3px #2E3440;
+    /*animation: occasional-hover 0.3s infinite;*/
+}
+.about-me-btn:hover {
+    transform: translate(-3px, -1px);
+
+    -webkit-box-shadow: 8px 6px 0px 3px #2E3440;
+    -moz-box-shadow: 8px 6px 0px 3px #2E3440;
+    box-shadow: 8px 6px 0px 3px #2E3440;
+}
+.about-me-btn:focus {
+    outline: 2px solid var(--color-deep-orange);
+    outline-offset: 3px;
+}
+
 
 .card {
     border-radius: 15px;
