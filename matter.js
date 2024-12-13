@@ -53,9 +53,14 @@ for (let i = 0; i < numberOfBalls; i++) {
       // Randomly select a spawn position
       let xPos = positions[Math.floor(Math.random() * positions.length)] + random;
       let circle = Bodies.circle(xPos, 10, ballSize, {
+        /*
         friction: 0.1,
         frictionAir: 0.00001,
         restitution: 0.8,
+         */
+        friction: 0.5, // Höhere Bodenreibung
+        frictionAir: 0.02, // Höhere Luftreibung
+        restitution: 0.5, // Weniger Bouncen
         render: {
           fillStyle: color
         }
