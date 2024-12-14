@@ -139,28 +139,33 @@ let rightWall = Bodies.rectangle(
 // add all of the bodies to the world
 Composite.add(engine.world, [ground, leftWall, rightWall]);
 
-let mouse = Matter.Mouse.create(render.canvas);
-let mouseConstraint = Matter.MouseConstraint.create(engine, {
-  mouse: mouse,
-  constraint: {
-    stiffness: 0.2,
-    render: {
-      visible: false
+// Detect if the user is on a mobile device
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (!isMobile) {
+  let mouse = Matter.Mouse.create(render.canvas);
+  let mouseConstraint = Matter.MouseConstraint.create(engine, {
+    mouse: mouse,
+    constraint: {
+      stiffness: 0.2,
+      render: {
+        visible: false
+      }
     }
-  }
-});
+  });
 
-Composite.add(engine.world, mouseConstraint);
+  Composite.add(engine.world, mouseConstraint);
 
-// allow scroll through the canvas
-mouseConstraint.mouse.element.removeEventListener(
-  "mousewheel",
-  mouseConstraint.mouse.mousewheel
-);
-mouseConstraint.mouse.element.removeEventListener(
-  "DOMMouseScroll",
-  mouseConstraint.mouse.mousewheel
-);
+  // allow scroll through the canvas
+  mouseConstraint.mouse.element.removeEventListener(
+      "mousewheel",
+      mouseConstraint.mouse.mousewheel
+  );
+  mouseConstraint.mouse.element.removeEventListener(
+      "DOMMouseScroll",
+      mouseConstraint.mouse.mousewheel
+  );
+}
 
 // run the renderer
 Render.run(render);
