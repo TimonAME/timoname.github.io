@@ -88,6 +88,8 @@ canvas {
     margin-bottom: 2rem;
     text-align: left;
     cursor: default;
+    /* wordbreaked */
+    word-break: break-all;
 }
 
 .scroll-indicator {
