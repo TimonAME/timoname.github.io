@@ -78,63 +78,10 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="container py-5">
-        <h2 class="section-header">My Projects</h2>
+    <section id="projects" class="container py-5">
+        <h2 class="section-header">Projects</h2>
 
-        <!-- Floating Project Card -->
-        <!--
-        <div class="row g-4 floating-projects-grid mb-5">
-            <div class="col-12 col-md-6 col-lg-4 floating-project-card-wrapper">
-                <div class="floating-project-card">
-                    <div class="floating-project-gradient"></div>
-                    <img src="https://placehold.co/500x500" alt="Project Title" class="floating-project-image">
-                    <div class="floating-project-content">
-                        <h3>Project Title</h3>
-                        <p class="project-description">Short project description that explains the project's purpose and impact</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Design</span>
-                            <span>Frontend</span>
-                        </div>
-                        <div class="floating-project-footer">
-                            <span class="project-role">Developer Role</span>
-                            <a href="#" class="floating-project-btn">Explore</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-
-        <!-- Asymmetric Project Card -->
-        <div class="row g-4 asymmetric-projects-grid mb-5">
-            <div class="col-12 col-md-6 col-lg-4 asymmetric-project-card-wrapper">
-                <div class="asymmetric-project-card">
-                    <div class="asymmetric-project-image-container">
-                        <img src="Images/Planning-Poker_CoverImage.jpeg" alt="Project Title" class="asymmetric-project-image">
-                    </div>
-                    <div class="asymmetric-project-content">
-                        <div class="asymmetric-project-header">
-                            <h3>Planning Poker</h3>
-                            <div class="project-tags">
-                                <span>NuxtJS</span>
-                                <span>Spring-Boot</span>
-                                <span>Tailwind</span>
-                                <span>Rest-API</span>
-                                <span>SQLite</span>
-                            </div>
-                        </div>
-                        <p class="project-description">Das Projekt Planning Poker ist eine digitale Lösung zur agilen Aufwandsschätzung, die im Rahmen eines Schulprojekts an der HTL Rennweg entwickelt wurde, mit Fokus auf Benutzerfreundlichkeit und Scrum-Prinzipien.</p>
-                        <div class="asymmetric-project-footer">
-                            <span class="project-role">Frontend Development</span>
-                            <a href="#" class="asymmetric-project-btn">Mehr</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Vertical Slice Project Card -->
+        <!-- KLUGes Management Project Card -->
         <div class="row g-4 vertical-slice-projects-grid mb-5">
             <div class="col-12 col-md-6 col-lg-4 vertical-slice-project-card-wrapper">
                 <div class="vertical-slice-project-card">
@@ -152,7 +99,10 @@
                         <p class="project-description">KLUGes Management ist eine webbasierte Applikation zur Verwaltung von Mitarbeitern, Kunden und Terminen des Nachhilfeunternehmens Lernen ist KLUG. Die Diplomarbeit umfasst Tools wie Wochenpläne, Anwesenheitsverfolgung und einen Lehrmaterialordner, um eine effiziente Zusammenarbeit zu gewährleisten.</p>
                         <div class="vertical-slice-project-footer">
                             <span class="project-role">UI/UX, Frontend Development</span>
-                            <a href="#" class="vertical-slice-project-btn">Mehr</a>
+                            <div class="project-button-div">
+                                <a href="http://klugesmanagement.at/" target="_blank" class="project-btn-reversed">Zur Seite</a>
+                                <a href="#" class="project-btn">Mehr</a>
+                            </div>
                         </div>
                     </div>
                     <div class="vertical-slice-project-image-container">
@@ -163,6 +113,7 @@
             </div>
         </div>
 
+        <!-- Unlock the Enigma Project Card -->
         <div class="row g-4 asymmetric-projects-grid mb-5">
             <div class="col-12 col-md-6 col-lg-4 asymmetric-project-card-wrapper">
                 <div class="asymmetric-project-card">
@@ -189,45 +140,101 @@
             </div>
         </div>
 
-        <!-- Diagonal Split Project Card -->
-        <!--
-        <div class="row g-4 diagonal-split-projects-grid mb-5">
-            <div class="col-12 col-md-6 col-lg-4 diagonal-split-project-card-wrapper">
-                <div class="diagonal-split-project-card">
-                    <div class="diagonal-split-project-image-container">
-                        <img src="Images/Unlock-The-Enigma_CoverImage.jpg" alt="Project Title" class="diagonal-split-project-image">
-                        <div class="diagonal-split-project-overlay"></div>
-                    </div>
-                    <div class="diagonal-split-project-content">
-                        <div class="diagonal-split-project-header">
-                            <h3>Project Title</h3>
+        <!-- MatterJS Project Card -->
+        <div class="row g-4 vertical-slice-projects-grid mb-5">
+            <div class="col-12 col-md-6 col-lg-4 vertical-slice-project-card-wrapper">
+                <div class="vertical-slice-project-card">
+                    <div class="vertical-slice-project-content">
+                        <div class="vertical-slice-project-header">
+                            <h3>MatterJS</h3>
                             <div class="project-tags">
-                                <span>React</span>
-                                <span>Design</span>
+                                <span>JavaScript</span>
+                                <span>MatterJS</span>
                             </div>
                         </div>
-                        <p class="project-description">Short project description that explains the project's purpose and impact</p>
-                        <div class="diagonal-split-project-footer">
-                            <span class="project-role">Developer Role</span>
-                            <a href="#" class="diagonal-split-project-btn">Explore</a>
+                        <p class="project-description">Das MatterJS-Projekt demonstriert eine interaktive Physiksimulation, die ich als visuelles Highlight in den Header meiner Portfolio-Seite integriert habe. Mithilfe von MatterJS wird eine dynamische Umgebung erstellt, in der Objekte physikalisch korrekt interagieren. Auf meiner Seite wird der Text "Timon Amesmann" in der Simulation eingebunden, sodass dieser als Teil des interaktiven Physikmodells agiert.</p>
+                        <div class="vertical-slice-project-footer">
+                            <span class="project-role">Development</span>
+                            <div class="project-button-div">
+                                <!--<a href="/matterjs" target="_blank" class="project-btn-reversed">Zur Seite</a>-->
+                                <a href="#" class="project-btn">Mehr</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-slice-project-image-container">
+                        <div class="vertical-slice-image-overlay"></div>
+                        <img src="Images/MatterJS_CoverImage.jpg" alt="KLUGes Management" class="vertical-slice-project-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Planning Poker Project Card -->
+        <div class="row g-4 asymmetric-projects-grid mb-5">
+            <div class="col-12 col-md-6 col-lg-4 asymmetric-project-card-wrapper">
+                <div class="asymmetric-project-card">
+                    <div class="asymmetric-project-image-container">
+                        <img src="Images/Planning-Poker_CoverImage.jpeg" alt="Project Title" class="asymmetric-project-image">
+                    </div>
+                    <div class="asymmetric-project-content">
+                        <div class="asymmetric-project-header">
+                            <h3>Planning Poker</h3>
+                            <div class="project-tags">
+                                <span>NuxtJS</span>
+                                <span>Spring-Boot</span>
+                                <span>Tailwind</span>
+                                <span>Rest-API</span>
+                                <span>SQLite</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Das Projekt Planning Poker ist eine digitale Lösung zur agilen Aufwandsschätzung, die im Rahmen eines Schulprojekts an der HTL Rennweg entwickelt wurde, mit Fokus auf Benutzerfreundlichkeit und Scrum-Prinzipien.</p>
+                        <div class="asymmetric-project-footer">
+                            <span class="project-role">Frontend Development</span>
+                            <div class="project-button-div">
+                                <a href="/Planning-Poker" target="_blank" class="project-btn-reversed">Zur Seite</a>
+                                <a href="#" class="project-btn">Mehr</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        -->
     </section>
 
     <!-- Achievements Section -->
-    <section class="container py-5">
+    <section id="achievements" class="container py-5">
         <h2 class="section-header">Achievements</h2>
 
+        <div class="achievements-grid">
+            <div class="achievements-timeline">
+                <div class="achievement-item">
+                    <div class="achievement-card">
+                        <div class="achievement-marker">🏆</div>
+                        <span class="achievement-date">2024</span>
+                        <h3 class="achievement-title">Cloudflight Coding Contest</h3>
+                        <p class="achievement-description">Im weltweit größten Programmierwettbewerb, dem Cloudflight Coding Contest, sicherten Felix Payer, Fabian Ha und ich unter über 150 Teams den 2. Platz, weltweit den 8. Platz.</p>
+                        <div class="achievement-image-container">
+                            <img src="Images/CodingContest_GroupFoto.jpg" alt="Coding Contest" class="achievement-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-card">
+                        <div class="achievement-marker">💻</div>
+                        <span class="achievement-date">2021+2022</span>
+                        <h3 class="achievement-title">Apotronik Praktikum</h3>
+                        <p class="achievement-description">Sommerpraktikum bei <a href="https://www.apotronik.at/">Apotronik</a> in der Abteilung Online und E-Commerce. Erfahrung gesammelt mit E-Commerce Systemen sowie Wordpress. Eingesetzt wurde ich für Webshop Dokumentation Datenbearbeitung und Datenbereitstellung für den Webshop durch Produktfotografie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Photo Gallery Section -->
-    <section class="container py-5">
-        <h2 class="section-header">My Photography</h2>
-
+    <section id="photography" class="container py-5">
+        <h2 class="section-header">Photography</h2>
+        <img src="https://placehold.co/800x400/" alt="Photo 1">
     </section>
 </div>
 
