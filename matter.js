@@ -62,7 +62,7 @@ for (let i = 0; i < numberOfBalls; i++) {
       let color = colors[Math.floor(Math.random() * colors.length)];
       // Randomly select a spawn position
       let xPos = positions[Math.floor(Math.random() * positions.length)] + random;
-      let circle = Bodies.circle(xPos, 10, ballSize, {
+      let circle = Bodies.circle(xPos, -250, ballSize, {
         /*
         friction: 0.1,
         frictionAir: 0.00001,

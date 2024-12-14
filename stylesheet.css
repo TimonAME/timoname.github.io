@@ -16,6 +16,29 @@ body {
     background-color: #f4f4f4;
 }
 
+/********** SCROLLBAR STYLING **********/
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-dark-blue); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #f4f4f4; /* Padding around the scrollbar thumb */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: var(--color-dark-blue) #f4f4f4; /* Color of the scrollbar thumb and track */
+}
+/********** SCROLLBAR STYLING **********/
+
 canvas {
     position: absolute;
     top: 0;
@@ -29,6 +52,11 @@ canvas {
     height: 100vh;
     overflow: hidden;
     background-color: #f4f4f4;
+
+    /* TODO: decide if keep or remove */
+    background-image: linear-gradient(to right, rgba(184, 184, 184, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(184, 184, 184, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px; /* Adjust the size of the grid cells */
 }
 
 #hidden-text {
@@ -36,8 +64,8 @@ canvas {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12vw;
-    font-weight: 900;
+    font-size: 15vw;
+    font-weight: 800;
     color: #f4f4f4;
     pointer-events: none;
     z-index: 2;
@@ -45,11 +73,21 @@ canvas {
     line-height: 1;
 }
 
+.content-sections {
+    background-image: linear-gradient(to right, rgba(184, 184, 184, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(184, 184, 184, 0.1) 1px, transparent 1px);
+    background-size: 40px 40px; /* Adjust the size of the grid cells */
+}
+
+
 .section-header {
+    font-size: 4rem;
     font-weight: 700;
+    line-height: 1.2;
     color: var(--color-dark-blue);
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
+    cursor: default;
 }
 
 .scroll-indicator {
@@ -75,6 +113,10 @@ canvas {
     }
 }
 
+
+
+
+/********** HEADER **********/
 /* Fixed Social Links */
 .fixed-social-links {
     position: fixed;
@@ -113,8 +155,12 @@ canvas {
     outline: 2px solid var(--color-deep-orange);
     outline-offset: 3px;
 }
+/********** HEADER **********/
 
 
+
+
+/********** NAVIGATION **********/
 /* Compact Horizontal Navigation */
 .compact-nav {
     position: fixed;
@@ -178,8 +224,12 @@ canvas {
     outline: 2px solid var(--color-deep-orange);
     outline-offset: 3px;
 }
+/********** NAVIGATION **********/
 
 
+
+
+/********** ABOUT ME **********/
 /* About me */
 .about-me-description {
     font-size: 4rem;
@@ -191,9 +241,23 @@ canvas {
     cursor: default;
 
 }
+/* Adjust text size for mobile devices */
+@media (max-width: 768px) {
+    .about-me-description {
+        font-size: 2rem;
+    }
+    .about-me-image {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .about-me-image {
-    height: 400px;
-    width: auto;
+    text-align: left;
+
+    height: auto;
+    width: 300px;
     -webkit-box-shadow: 5px 5px 0px 3px rgba(242,113,39,1);
     -moz-box-shadow: 5px 5px 0px 3px rgba(242,113,39,1);
     box-shadow: 5px 5px 0px 3px rgba(242,113,39,1);
@@ -247,47 +311,4 @@ canvas {
     outline: 2px solid var(--color-deep-orange);
     outline-offset: 3px;
 }
-
-
-.card {
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: none;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.project-card-img {
-    height: 250px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.social-links a {
-    color: var(--color-dark-blue);
-    font-size: 2rem;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: var(--color-orange);
-}
-
-.achievements-card {
-    background-color: var(--color-deep-orange);
-    color: white;
-}
-
-.photo-gallery img {
-    border-radius: 15px;
-    transition: transform 0.3s;
-}
-
-.photo-gallery img:hover {
-    transform: scale(1.05);
-}
+/********** ABOUT ME **********/

@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
 
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="my_projects.css">
 </head>
 <body>
 <!-- Hero Section with Physics Simulation -->
@@ -56,100 +57,144 @@
     <a href="#" target="_blank" title="Email"><i class="far fa-envelope"></i></a>
 </div>
 
-<!-- About Me Section -->
-<section id="about" class="container py-5">
-    <!-- TODO: for mobile devices, stack the image on top of the text -->
-    <div class="d-flex g-2 justify-content-end text-end">
-        <div>
-            <p class="about-me-description me-3">
-                Ich bin Schüler der HTL-Rennweg. Leidenschaftlicher <span class="about-me-highlight-text">Programmierer</span> und <span class="about-me-highlight-text">Fotograf</span>.
-            </p>
-            <div class="d-flex justify-content-center">
-                <a href="#about" class="about-me-btn mt-3">Mehr über mich</a>
+<!-- Content Sections -->
+<div class="content-sections">
+    <!-- About Me Section -->
+    <section id="about" class="container py-5">
+        <!-- TODO: for mobile devices, stack the image on top of the text -->
+        <!-- For mobile devices, stack the image on top of the text -->
+        <div class="d-flex flex-column flex-md-row g-2 justify-content-end text-end">
+            <div>
+                <p class="about-me-description me-3">
+                    Schüler der HTL-Rennweg. Leidenschaftlicher <span class="about-me-highlight-text">Programmierer</span> und <span class="about-me-highlight-text">Fotograf</span>.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="#about" class="about-me-btn mt-3">Mehr über mich</a>
+                </div>
             </div>
+
+            <img src="Timon_Amesmann_Image.jpg" alt="Timon Amesmann" class="about-me-image img-fluid rounded mt-3 mt-md-0">
         </div>
+    </section>
 
-        <img src="Timon_Amesmann_Image.jpg" alt="Timon Amesmann" class="about-me-image img-fluid rounded">
-    </div>
-</section>
+    <!-- Projects Section -->
+    <section class="container py-5">
+        <h2 class="section-header">My Projects</h2>
 
-<!-- Projects Section -->
-<section class="container py-5">
-    <h2 class="section-header">My Projects</h2>
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://placehold.co/400x250" alt="Project 1" class="card-img-top project-card-img">
-                <div class="card-body">
-                    <h5 class="card-title">Project 1</h5>
-                    <p class="card-text">Short description of the project.</p>
-                    <a href="#" class="btn btn-outline-dark">View Project</a>
+        <!-- Floating Project Card -->
+        <div class="row g-4 floating-projects-grid mb-5">
+            <div class="col-12 col-md-6 col-lg-4 floating-project-card-wrapper">
+                <div class="floating-project-card">
+                    <div class="floating-project-gradient"></div>
+                    <img src="https://placehold.co/500x500" alt="Project Title" class="floating-project-image">
+                    <div class="floating-project-content">
+                        <h3>Project Title</h3>
+                        <p class="project-description">Short project description that explains the project's purpose and impact</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Design</span>
+                            <span>Frontend</span>
+                        </div>
+                        <div class="floating-project-footer">
+                            <span class="project-role">Developer Role</span>
+                            <a href="#" class="floating-project-btn">Explore</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://placehold.co/400x250" alt="Project 2" class="card-img-top project-card-img">
-                <div class="card-body">
-                    <h5 class="card-title">Project 2</h5>
-                    <p class="card-text">Short description of the project.</p>
-                    <a href="#" class="btn btn-outline-dark">View Project</a>
+
+        <!-- Asymmetric Project Card -->
+        <div class="row g-4 asymmetric-projects-grid mb-5">
+            <div class="col-12 col-md-6 col-lg-4 asymmetric-project-card-wrapper">
+                <div class="asymmetric-project-card">
+                    <div class="asymmetric-project-image-container">
+                        <img src="https://placehold.co/500x500" alt="Project Title" class="asymmetric-project-image">
+                    </div>
+                    <div class="asymmetric-project-content">
+                        <div class="asymmetric-project-header">
+                            <h3>Project Title</h3>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Design</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Short project description that explains the project's purpose and impact</p>
+                        <div class="asymmetric-project-footer">
+                            <span class="project-role">Developer Role</span>
+                            <a href="#" class="asymmetric-project-btn">Explore</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="https://placehold.co/400x250" alt="Project 3" class="card-img-top project-card-img">
-                <div class="card-body">
-                    <h5 class="card-title">Project 3</h5>
-                    <p class="card-text">Short description of the project.</p>
-                    <a href="#" class="btn btn-outline-dark">View Project</a>
+
+        <!-- Vertical Slice Project Card -->
+        <div class="row g-4 vertical-slice-projects-grid mb-5">
+            <div class="col-12 col-md-6 col-lg-4 vertical-slice-project-card-wrapper">
+                <div class="vertical-slice-project-card">
+                    <div class="vertical-slice-project-content">
+                        <div class="vertical-slice-project-header">
+                            <h3>Project Title</h3>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Design</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Short project description that explains the project's purpose and impact</p>
+                        <div class="vertical-slice-project-footer">
+                            <span class="project-role">Developer Role</span>
+                            <a href="#" class="vertical-slice-project-btn">Explore</a>
+                        </div>
+                    </div>
+                    <div class="vertical-slice-project-image-container">
+                        <div class="vertical-slice-image-overlay"></div>
+                        <img src="https://placehold.co/500x500" alt="Project Title" class="vertical-slice-project-image">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- Achievements Section -->
-<section class="container py-5">
-    <h2 class="section-header">Achievements</h2>
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card achievements-card text-center p-4">
-                <h5>2nd Place</h5>
-                <p>CloudFlight Coding Contest</p>
+        <!-- Diagonal Split Project Card -->
+        <div class="row g-4 diagonal-split-projects-grid mb-5">
+            <div class="col-12 col-md-6 col-lg-4 diagonal-split-project-card-wrapper">
+                <div class="diagonal-split-project-card">
+                    <div class="diagonal-split-project-image-container">
+                        <img src="https://placehold.co/500x500" alt="Project Title" class="diagonal-split-project-image">
+                        <div class="diagonal-split-project-overlay"></div>
+                    </div>
+                    <div class="diagonal-split-project-content">
+                        <div class="diagonal-split-project-header">
+                            <h3>Project Title</h3>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Design</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Short project description that explains the project's purpose and impact</p>
+                        <div class="diagonal-split-project-footer">
+                            <span class="project-role">Developer Role</span>
+                            <a href="#" class="diagonal-split-project-btn">Explore</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card achievements-card text-center p-4">
-                <h5>Hackathon Winner</h5>
-                <p>Local Tech Innovation Challenge</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card achievements-card text-center p-4">
-                <h5>Best Innovative Solution</h5>
-                <p>University Tech Competition</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Photo Gallery Section -->
-<section class="container py-5">
-    <h2 class="section-header">My Photography</h2>
-    <div class="row photo-gallery g-4">
-        <div class="col-md-4">
-            <img src="https://placehold.co/400x300" alt="Photo 1" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-            <img src="https://placehold.co/400x300" alt="Photo 2" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-            <img src="https://placehold.co/400x300" alt="Photo 3" class="img-fluid">
-        </div>
-    </div>
-</section>
+    <!-- Achievements Section -->
+    <section class="container py-5">
+        <h2 class="section-header">Achievements</h2>
+
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="container py-5">
+        <h2 class="section-header">My Photography</h2>
+
+    </section>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="matter.js"></script>
