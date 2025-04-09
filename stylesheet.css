@@ -279,7 +279,7 @@ canvas {
     font-weight: 900;
     text-decoration: underline;
     transition: all 0.3s ease;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .about-me-highlight-text:hover {
     color: var(--color-deep-orange);
