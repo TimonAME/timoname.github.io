@@ -1,6 +1,6 @@
 <template>
   <section class="container py-5">
-    <h2 class="text-4xl md:text-6xl font-bold leading-tight text-sunset-gray mb-12 text-left cursor-default">Photography</h2>
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight text-sunset-gray mb-12 text-left cursor-default">Gallery</h2>
 
     <div class="flex flex-col gap-16">
       <PhotoCategory

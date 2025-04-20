@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-4 py-16">
+  <section id="programming-skills" class="container mx-auto px-4 py-16">
     <h2 class="text-4xl md:text-6xl font-bold leading-tight text-sunset-gray mb-12 text-left cursor-default">Skillsets</h2>
 
     <!-- Interactive skill categories tabs -->
@@ -126,7 +126,7 @@
     </div>
 
     <!-- Skills bubbles visual -->
-    <div class="mt-16 hidden md:block">
+    <div class="mt-16 hidden md:block select-none">
       <div class="relative h-32 overflow-hidden" data-aos="fade-up">
         <div class="absolute inset-0 flex flex-wrap justify-center items-center gap-3">
           <div

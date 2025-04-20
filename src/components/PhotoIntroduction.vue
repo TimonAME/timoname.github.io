@@ -23,24 +23,24 @@
           <a
               href="https://www.instagram.com/amesmann_t/"
               target="_blank"
-              class="inline-flex items-center gap-2 px-6 py-3 bg-sunset-gray text-custom-white rounded-lg transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-sunset-gray text-custom-white rounded-lg transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg select-none"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
-            Follow on Instagram
+            Auf Instagram Folgen
           </a>
           <a
               href="#photography"
-              class="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-sunset-gray text-sunset-gray rounded-lg transition-all duration-300 hover:bg-sunset-100/10"
+              class="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-sunset-gray text-sunset-gray rounded-lg transition-all duration-300 hover:bg-sunset-100/10 select-none"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
               <circle cx="12" cy="13" r="4"></circle>
             </svg>
-            View Gallery
+            Gallerie ansehen
           </a>
         </div>
       </div>
@@ -75,7 +75,7 @@
 
     <!-- Photography styles/interests -->
     <div class="mt-16" data-aos="fade-up" data-aos-delay="200">
-      <div class="flex flex-wrap justify-center gap-4">
+      <div class="flex flex-wrap justify-center gap-4 select-none">
         <span class="px-4 py-2 bg-sunset-100/20 text-sunset-100 rounded-full text-sm">Landscape</span>
         <span class="px-4 py-2 bg-sunset-100/20 text-sunset-100 rounded-full text-sm">Portrait</span>
         <span class="px-4 py-2 bg-sunset-100/20 text-sunset-100 rounded-full text-sm">Events</span>
