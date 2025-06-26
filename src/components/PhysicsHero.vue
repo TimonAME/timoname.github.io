@@ -76,20 +76,34 @@ function createBalls() {
     matterContainer.value.clientWidth * 0.9  // Right
   ];
 
-  // Calculate number of balls
-  let ballSize = 50;
-  let containerArea = matterContainer.value.clientWidth * matterContainer.value.clientHeight;
+  // Dynamic calculation
+  const minBallSize = 40;
+  const maxBallSize = 160;
+  const minBalls = 8;
+  const maxBalls = 45;
+
+  const containerArea = matterContainer.value.clientWidth * matterContainer.value.clientHeight;
+  const targetFill = containerArea * 0.66; // 2/3 of the section
+
+  // Start with a reasonable ball size
+  let ballSize = 60;
   let ballArea = Math.PI * Math.pow(ballSize, 2);
-  let numberOfBalls = Math.floor(containerArea / ballArea * 0.5); // Adjust the divisor to control density
 
-  // Adjust ball size if number of balls exceeds 50
-  if (numberOfBalls > 50) {
-    ballSize = Math.sqrt(containerArea / (Math.PI * 50 * 0.75));
-    ballSize = Math.max(ballSize, 50); // Ensure ball size does not go below 50
-    numberOfBalls = Math.floor(containerArea / (Math.PI * Math.pow(ballSize, 2)) * 0.75);
-  }
+  // Estimate number of balls to fill target area
+  let numberOfBalls = Math.floor(targetFill / ballArea);
 
-  let delay = ballSize; // Reduced delay
+  // Clamp number of balls
+  numberOfBalls = Math.max(minBalls, Math.min(numberOfBalls, maxBalls));
+
+  // Recalculate ball size to better fit the target fill with the clamped number
+  ballSize = Math.sqrt(targetFill / (numberOfBalls * Math.PI));
+  ballSize = Math.max(minBallSize, Math.min(ballSize, maxBallSize));
+
+  // Final number of balls based on adjusted size
+  numberOfBalls = Math.floor(targetFill / (Math.PI * Math.pow(ballSize, 2)));
+  numberOfBalls = Math.max(minBalls, Math.min(numberOfBalls, maxBalls));
+
+  let delay = 15; // Small delay for animation
 
   for (let i = 0; i < numberOfBalls; i++) {
     ((index) => {

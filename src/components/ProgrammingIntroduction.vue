@@ -42,7 +42,7 @@
       </div>
 
       <!-- Rechte Seite: Code-Snippet -->
-      <div class="md:w-1/3 mt-8 md:mt-0">
+      <div class="md:block hidden md:w-2/3 mt-8 md:mt-0">
         <div class="bg-sunset-gray text-custom-white p-4 rounded-lg shadow-[5px_5px_0px_3px_theme(colors.sunset-200)] transition-all duration-300 hover:translate-x-[-5px] hover:translate-y-[-5px] hover:shadow-[10px_10px_0px_3px_theme(colors.sunset-200)] h-full flex flex-col">
           <div class="flex items-center gap-2 mb-3">
             <div class="w-3 h-3 rounded-full bg-red-500"></div>
@@ -50,7 +50,8 @@
             <div class="w-3 h-3 rounded-full bg-green-500"></div>
             <span class="text-sm ml-2 opacity-70">function.js</span>
           </div>
-          <pre class="text-sm"><code>// My approach to problem solving
+          <pre class="text-sm overflow-x-auto"><code>
+// My approach to problem solving
 function createSolution(problem) {
   const plan = analyzeRequirements(problem);
 
@@ -66,7 +67,8 @@ function createSolution(problem) {
   }
 
   return deployAndMonitor(plan.solution);
-}</code></pre>
+}
+          </code></pre>
         </div>
       </div>
     </div>
