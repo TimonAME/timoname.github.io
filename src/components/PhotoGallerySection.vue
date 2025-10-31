@@ -1,5 +1,5 @@
 <template>
-  <section class="container py-5">
+  <section id="photogallery" class="container py-5">
     <h2 class="text-4xl md:text-6xl font-bold leading-tight text-sunset-gray mb-12 text-left cursor-default">Gallery</h2>
 
     <div class="flex flex-col gap-16 mx-2">
@@ -17,7 +17,16 @@ import PhotoCategory from './photography/PhotoCategory.vue';
 
 const photoCategories = ref([
   {
-    title: 'Italien',
+    title: 'Sizilien',
+    images: [
+      '/Images/galery/IMG_1227.jpg',
+      '/Images/galery/IMG_1164.jpg',
+      '/Images/galery/IMG_1172.jpg',
+      '/Images/galery/IMG_1176.jpg',
+    ]
+  },
+  {
+    title: 'Nord-Italien',
     images: [
       '/Images/galery/IMG_0126.jpg',
       '/Images/galery/IMG_0098.jpg',

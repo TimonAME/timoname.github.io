@@ -23,8 +23,7 @@
           <a
               href="https://www.instagram.com/amesmann_t/"
               target="_blank"
-              class="inline-flex items-center gap-2 px-6 py-3 bg-sunset-gray text-custom-white rounded-lg transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg select-none"
-          >
+              class="inline-flex items-center gap-2 px-6 py-3 bg-sunset-gray text-custom-white rounded-lg transition-all duration-300 hover:bg-sunset-gray/80 select-none"            >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -33,7 +32,7 @@
             Auf Instagram Folgen
           </a>
           <a
-              href="#photography"
+              href="#photogallery"
               class="inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-sunset-gray text-sunset-gray rounded-lg transition-all duration-300 hover:bg-sunset-100/10 select-none"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

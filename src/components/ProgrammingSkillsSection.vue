@@ -9,9 +9,9 @@
             v-for="(category, index) in categories"
             :key="index"
             @click="activeCategory = index"
-            class="px-5 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none"
+            class="px-5 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none cursor-pointer"
             :class="activeCategory === index ?
-            'bg-sunset-gray text-custom-white shadow-lg' :
+            'bg-sunset-gray text-custom-white shadow-lg hover:bg-sunset-gray/80' :
             'bg-white text-sunset-gray border border-sunset-200 hover:bg-sunset-100/10'"
         >
           <div class="flex items-center gap-2">
@@ -39,8 +39,10 @@
                   <img v-if="skill.icon" :src="skill.icon" :alt="skill.name" class="w-6 h-6 object-contain" />
                   <span class="font-medium text-sunset-gray">{{ skill.name }}</span>
                 </div>
-                <span class="text-sunset-gray/70">{{ skill.level }}%</span>
+                <!--<span class="text-sunset-gray/70">{{ skill.level }}%</span>-->
               </div>
+              <p class="text-sm text-gray-600 ml-8">{{ skill.description }}</p>
+              <!--
               <div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
                 <div
                     class="h-full bg-gradient-to-r from-sunset-100 to-sunset-200 rounded-full transition-all duration-1000 transform origin-left"
@@ -48,6 +50,7 @@
                     :style="`width: ${skill.level}%`"
                 ></div>
               </div>
+              -->
             </div>
           </div>
         </div>
@@ -67,14 +70,10 @@
           <div class="flex-grow">
             <!-- Experience years indicator -->
             <div class="mb-8">
-              <div class="flex justify-between text-sm mb-2">
-                <span>Beginner</span>
-                <span>Expert</span>
-              </div>
               <div class="h-2 w-full bg-gray-600 rounded-full mb-1 overflow-hidden">
                 <div
                     class="h-full bg-sunset-100 rounded-full transition-all duration-1000"
-                    :class="isVisible ? 'w-4/5' : 'w-0'"
+                    :style="{ width: calculateExperienceWidth(categories[activeCategory].yearsExperience) }"
                 ></div>
               </div>
               <div class="text-right text-sm text-custom-white/70">{{ categories[activeCategory].yearsExperience }} Jahre Erfahrung</div>
@@ -155,6 +154,12 @@ onMounted(() => {
   }, 500);
 });
 
+// Function to calculate the width of the experience bar
+const calculateExperienceWidth = (years) => {
+  const maxYears = 10; // Assuming 10 years is the maximum for full width
+  return `${(years / maxYears) * 100}%`;
+};
+
 // Categories and skills data
 const categories = ref([
   {
@@ -169,10 +174,26 @@ const categories = ref([
     ],
     projects: ['Guess-It', 'Planning Poker', 'MatterJS'],
     skills: [
-      { name: 'JavaScript', level: 95, icon: '/icons/javascript.svg' },
-      { name: 'Java', level: 75, icon: '/icons/java.svg' },
-      { name: 'PHP', level: 90, icon: '/icons/php.svg' },
-      { name: 'TypeScript', level: 70, icon: '/icons/typescript.svg' }
+      { 
+        name: 'JavaScript', 
+        icon: '/icons/javascript.svg',
+        description: 'Expertenkenntnisse in ES6+, asynchroner Programmierung und modernen Frameworks'
+      },
+      { 
+        name: 'Java', 
+        icon: '/icons/java.svg',
+        description: 'Solide OOP-Kenntnisse, Spring Boot und Enterprise-Anwendungen'
+      },
+      { 
+        name: 'PHP', 
+        icon: '/icons/php.svg',
+        description: 'Umfangreiche Erfahrung mit Symfony, Laravel und Backend-Entwicklung'
+      },
+      { 
+        name: 'TypeScript', 
+        icon: '/icons/typescript.svg',
+        description: 'Typsichere Entwicklung, Interfaces und fortgeschrittene Type-Features'
+      }
     ]
   },
   {
@@ -187,11 +208,32 @@ const categories = ref([
     ],
     projects: ['Guess-It', 'KLUGes Management', 'Planning Poker', 'Portfolio Website'],
     skills: [
-      { name: 'Vue.js', level: 95, icon: '/icons/vue.svg' },
-      { name: 'Symfony', level: 85, icon: '/icons/symfony.svg' },
-      { name: 'React', level: 65, icon: '/icons/react.svg' },
-      { name: 'Tailwind CSS', level: 100, icon: '/icons/tailwind.svg' },
-      { name: 'Spring Boot', level: 65, icon: '/icons/spring.svg' }
+      { 
+        name: 'Vue.js', 
+        icon: '/icons/vue.svg',
+        description: 'Composition API, Pinia State Management, komplexe SPAs'
+      },
+      { 
+        name: 'Symfony', 
+        icon: '/icons/symfony.svg',
+        description: 'MVC-Architektur, Doctrine ORM, API-Entwicklung'
+      },
+      { 
+        name: 'React', 
+        level: 3, 
+        icon: '/icons/react.svg',
+        description: 'Hooks, Component-basierte Architektur, React Router'
+      },
+      { 
+        name: 'Tailwind CSS', 
+        icon: '/icons/tailwind.svg',
+        description: 'Utility-First-Ansatz, Custom Configurations, Responsive Design'
+      },
+      { 
+        name: 'Spring Boot', 
+        icon: '/icons/spring.svg',
+        description: 'REST APIs, Dependency Injection, grundlegende Microservices'
+      }
     ]
   },
   {
@@ -207,8 +249,16 @@ const categories = ref([
     ],
     projects: ['KLUGes Management', 'Portfolio Website'],
     skills: [
-      { name: 'Adobe (Photoshop, Lightroom, Premiere, Illustrator)', level: 80, icon: '/icons/adobe.svg' },
-      { name: 'Figma', level: 85, icon: '/icons/figma.svg' },
+      { 
+        name: 'Adobe (Photoshop, Lightroom, Premiere, Illustrator)', 
+        icon: '/icons/adobe.svg',
+        description: 'Bildbearbeitung, Videoediting, Vektorgrafiken und Creative Suite'
+      },
+      { 
+        name: 'Figma', 
+        icon: '/icons/figma.svg',
+        description: 'Prototyping, Design Systems, Kollaborative Workflows'
+      }
     ]
   },
   {
@@ -223,12 +273,36 @@ const categories = ref([
     ],
     projects: ['KLUGes Management', 'Planning Poker', 'Unlock the Enigma'],
     skills: [
-      { name: 'MySQL', level: 80, icon: '/icons/mysql.svg' },
-      { name: 'SQLite', level: 90, icon: '/icons/sqlite.svg' },
-      { name: 'MongoDB', level: 75, icon: '/icons/mongodb.svg' },
-      { name: 'RESTful APIs', level: 80, icon: '/icons/rest.svg' },
-      { name: 'Docker', level: 80, icon: '/icons/docker.svg' },
-      { name: 'Git', level: 90, icon: '/icons/git.svg' }
+      { 
+        name: 'MySQL', 
+        icon: '/icons/mysql.svg',
+        description: 'Komplexe Queries, Indexierung, Datenbankoptimierung'
+      },
+      { 
+        name: 'SQLite', 
+        icon: '/icons/sqlite.svg',
+        description: 'Embedded Databases, Mobile Apps, lokale Datenspeicherung'
+      },
+      { 
+        name: 'MongoDB', 
+        icon: '/icons/mongodb.svg',
+        description: 'NoSQL, Document-based Storage, Aggregation Pipeline'
+      },
+      { 
+        name: 'RESTful APIs', 
+        icon: '/icons/rest.svg',
+        description: 'API-Design, HTTP-Standards, Authentication & Authorization'
+      },
+      { 
+        name: 'Docker', 
+        icon: '/icons/docker.svg',
+        description: 'Container-Management, Docker Compose, Deployment-Pipelines'
+      },
+      { 
+        name: 'Git', 
+        icon: '/icons/git.svg',
+        description: 'Version Control, Branching Strategies, Merge Workflows'
+      }
     ]
   }
 ]);

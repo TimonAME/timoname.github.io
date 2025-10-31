@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row gap-8 justify-center md:justify-end text-center md:text-right">
       <div class="">
         <p class="text-4xl md:text-6xl font-black leading-tight text-[#2E3440] mb-6 cursor-default">
-          Schüler der HTL-Rennweg. Leidenschaftlicher
+          HTL-Rennweg Absolvent.<br> Leidenschaftlicher
           <span class="text-[#F2921D] font-black underline transition-all duration-300 hover:text-[#F27127]">Programmierer</span>
           und
           <span class="text-[#F2921D] font-black underline transition-all duration-300 hover:text-[#F27127]">Fotograf</span>.

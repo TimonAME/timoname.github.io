@@ -115,7 +115,7 @@
             <h3 class="text-2xl font-bold mb-6 text-center">Erfolge auf einen Blick</h3>
 
             <!-- Stats items -->
-            <div class="space-y-8">
+            <div class="space-y-8 mb-1">
               <div class="flex items-center gap-4">
                 <div class="bg-sunset-100 rounded-full w-16 h-16 flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-custom-white" viewBox="0 0 20 20" fill="currentColor">
@@ -178,6 +178,7 @@
             </div>
 
             <!-- Skills progress -->
+            <!--
             <div class="mt-12 space-y-4">
               <h4 class="text-lg font-medium mb-4">Wichtige Fähigkeiten</h4>
 
@@ -211,6 +212,7 @@
                 </div>
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>
