@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-4 py-16">
+  <section class="container mx-auto px-4 py-16" id="achievements">
     <h2 class="text-4xl md:text-6xl font-bold leading-tight text-sunset-gray mb-12 text-left cursor-default">Achievements</h2>
 
     <div class="flex flex-col lg:flex-row gap-12">
@@ -11,7 +11,7 @@
         <!-- Achievement Items -->
         <div class="space-y-16">
           <!-- Achievement Austrian Skills -->
-          <div class="relative md:pl-24 pl-12" data-aos="fade-right">
+          <div class="relative md:pl-24 pl-12" data-aos="fade-right" id="achievement-austrian-skills">
             <!-- Date marker -->
             <div class="absolute left-0 top-0 bg-sunset-gray text-custom-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg z-10">
               <span class="font-bold">2025</span>

@@ -8,6 +8,10 @@
           und
           <span class="text-[#F2921D] font-black underline transition-all duration-300 hover:text-[#F27127]">Fotograf</span>.
         </p>
+        <p class="text-xl tracking-wide text-[#6B7280] mt-2">
+          Bronze-Gewinner bei den Austrian Skills Webdevelopment 2025 –
+          <a href="#achievement-austrian-skills" class="underline text-[#F2921D] hover:text-[#F27127] transition-all">mehr erfahren</a>
+        </p>
         <!--
         <div data-aos="fade-up" class="flex justify-end">
           <a href="#skills" class="font-semibold text-white bg-[#F27127] border-none py-3 px-8 rounded text-uppercase transition-all duration-300 no-underline inline-block mr-4 shadow-[5px_5px_0px_3px_#2E3440] hover:translate-x-[-3px] hover:translate-y-[-1px] hover:shadow-[8px_6px_0px_3px_#2E3440] focus:outline-2 focus:outline-[#F27127] focus:outline-offset-3">

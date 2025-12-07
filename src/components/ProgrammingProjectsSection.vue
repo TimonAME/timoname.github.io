@@ -66,8 +66,8 @@ const projects = ref([
     tags: ['Symfony', 'Doctrine', 'Twig', 'VueJS', 'Tailwind'],
     image: '/Images/KLUGes-Management_CoverImage.jpg',
     role: 'UI/UX, Frontend Development',
-    link: 'http://klugesmanagement.at/'
-  },
+    link: 'https://timoname.github.io/KlugesManagement-Demo/'
+  },/*
   {
     style: 'left',
     title: 'Unlock the Enigma',
@@ -75,9 +75,9 @@ const projects = ref([
     tags: ['Symfony', 'Twig', 'JavaScript', 'Tailwind'],
     image: '/Images/Unlock-The-Enigma_CoverImage.jpg',
     role: 'Frontend Development'
-  },
+  },*/
   {
-    style: 'right',
+    style: 'left',
     title: 'MatterJS',
     description: 'Das MatterJS-Projekt demonstriert eine interaktive Physiksimulation, die ich als visuelles Highlight in den Header meiner Portfolio-Seite integriert habe. Mithilfe von MatterJS wird eine dynamische Umgebung erstellt, in der Objekte physikalisch korrekt interagieren. Auf meiner Seite wird der Text "Timon Amesmann" in der Simulation eingebunden, sodass dieser als Teil des interaktiven Physikmodells agiert.',
     tags: ['JavaScript', 'MatterJS'],
@@ -85,7 +85,7 @@ const projects = ref([
     role: 'Development'
   },
   {
-    style: 'left',
+    style: 'right',
     title: 'Planning Poker',
     description: 'Das Projekt Planning Poker ist eine digitale Lösung zur agilen Aufwandsschätzung, die im Rahmen eines Schulprojekts an der HTL Rennweg entwickelt wurde, mit Fokus auf Benutzerfreundlichkeit und Scrum-Prinzipien.',
     tags: ['NuxtJS', 'Spring-Boot', 'Tailwind', 'Rest-API', 'SQLite'],
