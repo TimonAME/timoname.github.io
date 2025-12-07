@@ -51,6 +51,15 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 const projects = ref([
   {
+    style: 'right',
+    title: 'FollowTheFLow',
+    description: 'Follow The Flow ist ein Gedächtnis- und Reaktionsspiel, bei dem Spieler zunehmend längere Sequenzen von Richtungseingaben wiederholen müssen. Das Spiel ist in zuge des Austrian Skills Wettbewerb 2025 entstanden und wurde mit VueJS entwickelt. Es bietet eine einfache Benutzeroberfläche, akustische und visuelle Rückmeldungen sowie eine Highscore-Funktion, um den Wettbewerbsaspekt zu fördern.',
+    tags: ['VueJS'],
+    image: '/Images/FollowTheFLow.png',
+    role: 'Development',
+    link: 'https://timoname.github.io/FollowTheFlow'
+  },
+  {
     style: 'left',
     title: 'Guess-It',
     description: 'Guess-It ist ein interaktives Geografie-Quizspiel mit verschiedenen Spielmodi, das Wissen über Länder, Grenzen und Verbindungen auf spielerische Weise testet. Spieler können Länder anhand ihres Namens auf der Karte finden, umgekehrt Länder benennen oder Verbindungen zwischen Staaten durch die kürzeste Grenzroute herstellen. Eine navigierbare, intuitive Karte und ein klares UI-Design sorgen für eine ansprechende Nutzererfahrung.',
