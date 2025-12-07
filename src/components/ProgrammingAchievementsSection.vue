@@ -10,6 +10,37 @@
 
         <!-- Achievement Items -->
         <div class="space-y-16">
+          <!-- Achievement Austrian Skills -->
+          <div class="relative md:pl-24 pl-12" data-aos="fade-right">
+            <!-- Date marker -->
+            <div class="absolute left-0 top-0 bg-sunset-gray text-custom-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg z-10">
+              <span class="font-bold">2025</span>
+            </div>
+
+            <!-- Content card -->
+            <div class="bg-custom-white rounded-lg shadow-[5px_5px_0px_3px_theme(colors.sunset-200)] transition-all duration-300 hover:translate-y-[-10px] hover:shadow-[5px_15px_0px_3px_theme(colors.sunset-200)] p-6">
+              <div class="flex flex-col md:flex-row gap-6">
+                <!-- Achievement image -->
+                <div class="md:w-1/3">
+                  <div class="h-48 rounded-lg overflow-hidden">
+                    <img src="/Images/AustrianSkills.jpg" alt="Diploma Project" class="w-full h-full object-cover">
+                  </div>
+                </div>
+
+                <!-- Achievement content -->
+                <div class="md:w-2/3">
+                  <h3 class="text-2xl font-bold text-sunset-gray mb-2">Austrian Skills 2025</h3>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-sunset-100/20 text-sunset-100 text-sm py-1 px-3 rounded-full">VueJS</span>
+                    <span class="bg-sunset-100/20 text-sunset-100 text-sm py-1 px-3 rounded-full">Symfony</span>
+                    <span class="bg-sunset-100/20 text-sunset-100 text-sm py-1 px-3 rounded-full">OWASP 10</span>
+                  </div>
+                  <p class="text-gray-700">Platzierung als 3.-Bester Webdeveloper Österreichs bei den Austrian Skills. <br> Während drei intensiven Wettkampftagen wurden anspruchsvolle Aufgaben in Frontend- und Backend-Entwicklung, Web-Security nach OWASP-Standards sowie modernem Webdesign gelöst. Dabei konnte ich mein technisches Know-how, Problemlösungskompetenz und Kreativität unter realistischem Zeitdruck erfolgreich unter Beweis stellen.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Achievement Diplomarbeit -->
           <div class="relative md:pl-24 pl-12" data-aos="fade-right">
             <!-- Date marker -->
