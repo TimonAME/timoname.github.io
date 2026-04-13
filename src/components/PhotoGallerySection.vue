@@ -17,6 +17,25 @@ import PhotoCategory from './photography/PhotoCategory.vue';
 
 const photoCategories = ref([
   {
+    title: 'Palmenhaus',
+    images: [
+      '/Images/galery/IMG_1828.jpg',
+      '/Images/galery/IMG_1766.jpg',
+      '/Images/galery/IMG_1717.jpg',
+      '/Images/galery/IMG_1654.jpg',
+      '/Images/galery/IMG_1864.jpg',
+      '/Images/galery/IMG_1562.jpg',
+    ]
+  },
+  {
+    title: 'Schloss Schönbrunn',
+    images: [
+      '/Images/galery/IMG_1336.jpg',
+      '/Images/galery/IMG_1437.jpg',
+      '/Images/galery/IMG_1350.jpg',
+    ]
+  },
+  {
     title: 'Sizilien',
     images: [
       '/Images/galery/IMG_1227.jpg',
@@ -45,7 +64,9 @@ const photoCategories = ref([
       '/Images/galery/IMG_2383.jpg',
       '/Images/galery/IMG_2651.jpg',
       '/Images/galery/IMG_2229.jpg',
-      '/Images/galery/IMG_2069.jpg'
+      '/Images/galery/IMG_2069.jpg',
+      '/Images/galery/IMG_2467.jpg',
+      '/Images/galery/IMG_2127.jpg'
     ]
   },
   {
